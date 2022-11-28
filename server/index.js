@@ -11,7 +11,7 @@ app.use(cors());
 
 
 const createAdmin = async () => {
-    const admin = await Owner.create({
+    await Owner.create({
         username: 'admin',
         password: 'password'
     });
